@@ -1,0 +1,10 @@
+# tokens
+{.   =   :=  --  ,   ;   (   ) []  [   ]   ->  #
+	< > <=  >=  &   |   ~   +   -   *   /   \  ..
+-}
+
+# Keywords
+{- 
+	module private end const Boolean integer begin typedef array range
+	proc val ref return write read if fi do od true false forall llarof skip
+-}
