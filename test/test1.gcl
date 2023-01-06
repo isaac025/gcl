@@ -1,0 +1,13 @@
+module test_module
+begin 
+    a, b: int
+    a := 10
+    const y: int := 10
+    x = 10 --- boolean expression: x is equal to 10
+    x # 10 --- boolean expression: x is not equal to 10
+    x := 10 === int x := 10 === x: int := 10
+
+
+    print("Before switch\na = ", a, "\nb = ", b)
+    print("After switch\na = ", a, "\nb = ", b)
+end.

@@ -1,10 +1,31 @@
 # tokens
-{.   =   :=  --  ,   ;   (   ) []  [   ]   ->  #
-	< > <=  >=  &   |   ~   +   -   *   /   \  ..
--}
+equality: =   
+not equal: #
+assignment: :=  
+comma: ,   
+tuples: (a b c) 
+arrays: TYPE array [SIZE] IDEN or TYPE array IDEN = [value1 value2 value3..valueN]
+then : -> 
+less than: < 
+greater than: > 
+less than or eq: <=  
+greater than or eq: >=  
+and: /\ 
+or: \/ 
+not: ~   
+plus: +   
+minus: -   
+mult: *   
+div: /   
+rem: \  
+ranges: ..
 
 # Keywords
 {- 
-	module private end const Boolean integer begin typedef array range
-	proc val ref return write read if fi do od true false forall llarof skip
+	module private end const bool int float double begin typedef array range
+	proc val ref return print if fi do od true false skip otherwise
 -}
+
+# Comments
+-- single
+-| |- multi line 

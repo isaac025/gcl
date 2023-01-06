@@ -5,5 +5,5 @@ Compiler for the [Guarded Command Language](https://en.wikipedia.org/wiki/Guarde
 
 ## Resources
 - [Guarded Command Language](https://en.wikipedia.org/wiki/Guarded_Command_Language) 
-- "Compilers: Principles, Techniques, and Tools", Aho Sethi, Ullman
-
+- "Compilers: Principles, Techniques, and Tools". Aho, Sethi, Ullman
+- "Tagless-final style". Kiselyov
