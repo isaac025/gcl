@@ -2,9 +2,9 @@
 equality: =   
 not equal: #
 assignment: :=  
-comma: ,   
+comma: ,  --- only used to separate parameters
 tuples: (a b c) 
-arrays: TYPE array [SIZE] IDEN or TYPE array IDEN = [value1 value2 value3..valueN]
+arrays: IDEN: TYPE [SIZE];  IDEN = [value1 value2 value3..valueN] ----- TYPE INFERRED
 then : -> 
 less than: < 
 greater than: > 
@@ -12,7 +12,7 @@ less than or eq: <=
 greater than or eq: >=  
 and: /\ 
 or: \/ 
-not: ~   
+not: !   
 plus: +   
 minus: -   
 mult: *   
@@ -20,12 +20,45 @@ div: /
 rem: \  
 ranges: ..
 
-# Keywords
-{- 
-	module private end const bool int float double begin typedef array range
-	proc val ref return print if fi do od true false skip otherwise
--}
+# Types can be lowercase or uppercase
+bool 
+char
+str
+i8
+u8
+i16
+u16
+i32
+u32
+f32
+i64
+u64
+f64
+i128
+u128
+f128
+
+# Keywords all keywords can be lowercase or uppercase
+module, private, end, const, begin, typedef, range,
+proc, val, ref, return, print, if, fi, do, od, true, false, skip, otherwise,
+
+# Example
+MODULE 
+PRIVATE
+    CONST size := 16
+    BEGIN
+        PROC name(VAL a: I64, REF b: U64)
+        BEGIN
+            IF a > 16 -> 
+                print("is pretty big")
+                b := a
+             | OTHERWISE -> RETURN 0
+        end.
+    end.
 
 # Comments
 -- single
 -| |- multi line 
+
+# Language extension Preprocessor
+-# ALLOW Asm #- allows assembly language statements
